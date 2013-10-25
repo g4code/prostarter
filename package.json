@@ -1,0 +1,40 @@
+{
+  "name": "prostarter",
+  "version": "0.0.1",
+  "description": "node.js and php project starter",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/g4code/prostarter"
+  },
+  "keywords": [
+    "project",
+    "start",
+    "init",
+    "prostarter"
+  ],
+  "author": "Drasko Gomboc <drasko.gomboc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/g4code/prostarter/issues"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "dependencies": {
+    "colors": "*",
+    "commander": "*",
+    "evento": "*",
+    "underscore": "*"
+  },
+  "bin": {
+    "prostarter": "./bin/prostarter.js"
+  }
+}
