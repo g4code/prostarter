@@ -11,7 +11,7 @@ program.version(packageData.version)
        .parse(process.argv);
 
 var prostarter = new Prostarter();
-prostarter.args = program.args;
-prostarter.type = program.type;
-prostarter.name = program.name;
+prostarter.request.args = program.args;
+prostarter.request.type = program.type;
+prostarter.request.name = program.name;
 prostarter.init();
