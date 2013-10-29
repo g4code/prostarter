@@ -90,4 +90,37 @@ describe("validator", function(){
             validator.checkType().should.be.an("object");
         });
     });
+
+    describe("isArgValid", function(){
+
+        it("should return true if args are not empty", function(){
+
+            validator.request = {args:["./"]};
+            validator.isArgValid().should.be.true;
+        });
+
+        it("should return false args are empty", function(){
+
+            validator.request = {args:[]};
+            validator.isArgValid().should.be.false;
+        });
+    });
+
+    describe("isTypeValid", function(){
+
+        it("should return true if type is valid", function(){
+
+            validator.request = {type:"php"};
+            validator.isTypeValid().should.be.true;
+
+            validator.request = {type:"node"};
+            validator.isTypeValid().should.be.true;
+        });
+
+        it("should return false if type is not valid", function(){
+
+            validator.request = {type:"aaa"};
+            validator.isTypeValid().should.be.false;
+        });
+    });
 });
