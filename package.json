@@ -1,6 +1,6 @@
 {
   "name": "prostarter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "node.js and php project starter",
   "main": "index.js",
   "directories": {
