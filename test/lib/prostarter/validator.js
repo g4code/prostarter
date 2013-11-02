@@ -96,13 +96,13 @@ describe("validator", function(){
         it("should return true if args are not empty", function(){
 
             validator.request = {args:["./"]};
-            validator.isArgValid().should.be.true;
+            validator.isArgValid().should.be['true'];
         });
 
         it("should return false args are empty", function(){
 
             validator.request = {args:[]};
-            validator.isArgValid().should.be.false;
+            validator.isArgValid().should.be['false'];
         });
     });
 
@@ -111,16 +111,16 @@ describe("validator", function(){
         it("should return true if type is valid", function(){
 
             validator.request = {type:"php"};
-            validator.isTypeValid().should.be.true;
+            validator.isTypeValid().should.be['true'];
 
             validator.request = {type:"node"};
-            validator.isTypeValid().should.be.true;
+            validator.isTypeValid().should.be['true'];
         });
 
         it("should return false if type is not valid", function(){
 
             validator.request = {type:"aaa"};
-            validator.isTypeValid().should.be.false;
+            validator.isTypeValid().should.be['false'];
         });
     });
 });
