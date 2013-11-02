@@ -14,4 +14,4 @@ var prostarter = new Prostarter();
 prostarter.request.args = program.args;
 prostarter.request.type = program.type;
 prostarter.request.name = program.name;
-prostarter.init();
+prostarter.run();
