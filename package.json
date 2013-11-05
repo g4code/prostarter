@@ -32,7 +32,8 @@
     "colors": "*",
     "commander": "*",
     "evento": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "informer": "*"
   },
   "bin": {
     "prostarter": "./bin/prostarter.js"
