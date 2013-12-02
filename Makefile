@@ -3,6 +3,9 @@ MOCHA_PATH = ./node_modules/.bin/mocha
 install:
 	@npm install
 
+update:
+	@npm update
+
 pack:
 	@npm pack
 
@@ -23,5 +26,5 @@ test-w:
 		--growl \
 		--watch
 
-.PHONY: install pack
+.PHONY: install update pack
 .PHONY: test test-spec test-w
