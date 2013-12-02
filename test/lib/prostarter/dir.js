@@ -10,7 +10,16 @@ describe("dir", function(){
         it("should should create a path", function(){
 
             dir.request = {dir: "."};
-            dir.getFullPath("dir").should.be.equal("./dir");
+            dir.getFullPath("dir").should.contain("/dir");
+        });
+    });
+
+    describe("doesPathExists", function(){
+
+        it("should check if path exists", function(){
+
+            dir.dirPath = __dirname;
+            dir.doesPathExists().should.be['true'];
         });
     });
 });
