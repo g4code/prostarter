@@ -5,6 +5,18 @@ var should = require("chai").should(),
 
 describe("filter", function(){
 
+    describe("camelCaseName", function(){
+
+        it("should transform dash to camel case", function(){
+
+            filter.request = {name: "clean-code"};
+            filter
+                .capitalizeName()
+                .camelCaseName();
+            filter.request.camelCasedName.should.equal("CleanCode");
+        });
+    });
+
     describe("capitalize", function(){
 
         it("should capitalize", function(){
