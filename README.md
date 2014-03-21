@@ -3,6 +3,8 @@ prostarter
 
 > node.js and php project starter tool - [nodejs](http://nodejs.org) library
 
+[![NPM](https://nodei.co/npm/prostarter.png)](https://nodei.co/npm/prostarter/)
+
 ## Install
 
     $ npm install -g prostarter
